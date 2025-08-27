@@ -5,32 +5,50 @@ Este projeto é um exemplo simples de como utilizar um ESP32 para controlar um s
 Objetivos
 
 Controlar um servo motor usando a biblioteca ESP32Servo.
+
 Acender e apagar um LED de forma sincronizada com os movimentos do servo.
+
 Aplicar conceitos básicos de eletrônica e programação embarcada.
 
 Materiais necessários
+
 ESP32
+
 Servo motor (como SG90)
+
 LED comum
+
 Resistor de 220 ohms (para o LED)
+
 Jumpers
+
 Protoboard
+
 Esquema de ligação
 
 Conexões sugeridas:
+
 Componente	ESP32 GPIO
+
 Servo	GPIO 2
+
 LED	GPIO 5
+
 O resistor de 220 ohms deve ser colocado em série com o LED.
+
 Conecte todos os GNDs (servo, LED, ESP32) ao mesmo terra.
+
 Para melhor desempenho, especialmente com servos maiores, recomenda-se uma fonte externa de 5V para alimentar o servo.
 
 Instalação da biblioteca
 Antes de rodar o código, é necessário instalar a biblioteca ESP32Servo.
 
 Passos no Arduino IDE:
+
 Vá em Sketch > Incluir Biblioteca > Gerenciar Bibliotecas.
+
 Procure por ESP32Servo.
+
 Instale a biblioteca.
      Código basico de funcionamento;
      
@@ -66,9 +84,13 @@ Instale a biblioteca.
 O que esse código faz!?
 
 O servo começa na posição central (90°).
+
 Em seguida, gira para 180°, enquanto o LED acende.
+
 Depois, retorna para 90° e o LED apaga.
+
 O servo vai então para 0°, espera, e retorna ao centro com o LED aceso novamente.
+
 O ciclo se repete indefinidamente.
 
 Observações
