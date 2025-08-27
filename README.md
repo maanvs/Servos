@@ -2,7 +2,7 @@
 Este projeto é um exemplo simples de como utilizar um ESP32 para controlar um servo motor e um LED. A ideia é fazer o servo se mover entre posições específicas enquanto o LED acende e apaga em sincronia com esses movimentos.
 É um bom ponto de partida para quem está aprendendo a trabalhar com servo motores, sinais PWM e controle digital com microcontroladores.
 
-Objetivos
+.     Objetivos
 
 Controlar um servo motor usando a biblioteca ESP32Servo.
 
@@ -10,7 +10,7 @@ Acender e apagar um LED de forma sincronizada com os movimentos do servo.
 
 Aplicar conceitos básicos de eletrônica e programação embarcada.
 
-Materiais necessários
+.     Materiais necessários
 
 ESP32
 
@@ -26,7 +26,7 @@ Protoboard
 
 Esquema de ligação
 
-Conexões sugeridas:
+.     Conexões sugeridas:
 
 Componente	ESP32 GPIO
 
@@ -40,10 +40,11 @@ Conecte todos os GNDs (servo, LED, ESP32) ao mesmo terra.
 
 Para melhor desempenho, especialmente com servos maiores, recomenda-se uma fonte externa de 5V para alimentar o servo.
 
-Instalação da biblioteca
+.     Instalação da biblioteca
+
 Antes de rodar o código, é necessário instalar a biblioteca ESP32Servo.
 
-Passos no Arduino IDE:
+.     Passos no Arduino IDE:
 
 Vá em Sketch > Incluir Biblioteca > Gerenciar Bibliotecas.
 
@@ -81,7 +82,7 @@ Instale a biblioteca.
           delay(1000);
         }
 
-O que esse código faz!?
+.     O que esse código faz!?
 
 O servo começa na posição central (90°).
 
@@ -93,11 +94,11 @@ O servo vai então para 0°, espera, e retorna ao centro com o LED aceso novamen
 
 O ciclo se repete indefinidamente.
 
-Observações
+.     Observações
 O ESP32 pode não fornecer corrente suficiente para alguns servos. Se o movimento estiver fraco ou errático, use uma fonte de alimentação externa para o servo.
 Sempre conecte o GND da fonte externa ao GND do ESP32 para garantir o funcionamento correto do sinal PWM.
 
-conclusão
+.     conclusão
  Com apenas alguns materiais e linhas de código você consegue "automatizar" algo!
 
  ![1000058528](https://github.com/user-attachments/assets/1a24e145-01a2-405d-9719-7abe1969dc6d)
