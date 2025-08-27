@@ -32,7 +32,8 @@ Passos no Arduino IDE:
 Vá em Sketch > Incluir Biblioteca > Gerenciar Bibliotecas.
 Procure por ESP32Servo.
 Instale a biblioteca.
-     Código-fonte
+     Código basico de funcionamento;
+     
         #include <ESP32Servo.h>  // Biblioteca para controlar servo motor com ESP32
         Servo motor;  // Objeto para controle do servo
         #define LED_PIN 5  // Define o pino onde o LED está conectado
@@ -74,4 +75,8 @@ Observações
 O ESP32 pode não fornecer corrente suficiente para alguns servos. Se o movimento estiver fraco ou errático, use uma fonte de alimentação externa para o servo.
 Sempre conecte o GND da fonte externa ao GND do ESP32 para garantir o funcionamento correto do sinal PWM.
 
-clonclusão: com apenas alguns materiais e linhas de código você consegue "automatizar" algo!
+conclusão
+ Com apenas alguns materiais e linhas de código você consegue "automatizar" algo!
+
+ ![1000058528](https://github.com/user-attachments/assets/1a24e145-01a2-405d-9719-7abe1969dc6d)
+
