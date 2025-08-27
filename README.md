@@ -95,10 +95,12 @@ O servo vai então para 0°, espera, e retorna ao centro com o LED aceso novamen
 O ciclo se repete indefinidamente.
 
 .     Observações
+
 O ESP32 pode não fornecer corrente suficiente para alguns servos. Se o movimento estiver fraco ou errático, use uma fonte de alimentação externa para o servo.
 Sempre conecte o GND da fonte externa ao GND do ESP32 para garantir o funcionamento correto do sinal PWM.
 
 .     conclusão
+
  Com apenas alguns materiais e linhas de código você consegue "automatizar" algo!
 
  ![1000058528](https://github.com/user-attachments/assets/1a24e145-01a2-405d-9719-7abe1969dc6d)
